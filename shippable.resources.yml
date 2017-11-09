@@ -1,0 +1,7 @@
+resources:
+  - name: ci-params
+    type: params
+    version:
+      params:
+        KEY1: "value1"
+        KEY2: "value2"
