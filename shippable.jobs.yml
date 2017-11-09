@@ -21,4 +21,4 @@ jobs:
     type: runCI
     steps:
       - IN: ci-params
-      - IN: local-ci_ciRepo
+      - IN: ci-gitRepo
