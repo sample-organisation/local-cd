@@ -16,3 +16,9 @@ jobs:
           name: echo-facts
           script: 
             - echo "cats are cute"
+
+  - name: local-ci_runCI
+    type: runCI
+    steps:
+      - IN: ci-params
+      - IN: local-ci_ciRepo
