@@ -22,3 +22,14 @@ jobs:
     steps:
       - IN: ci-params
       - IN: ci-gitRepo
+      
+  - name: new-min-sh-windows
+    type: runSh
+    runtime:
+      nodePool: default_node_pool
+      container: true
+    steps:
+      - TASK:
+          name: echo-facts
+          script: 
+            - echo "cats are cute"
