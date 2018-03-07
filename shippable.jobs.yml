@@ -27,7 +27,7 @@ jobs:
     type: runSh
     runtime:
       nodePool: default_node_pool
-      container: true
+      container: false
     steps:
       - TASK:
           name: echo-facts
