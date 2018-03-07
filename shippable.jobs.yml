@@ -4,24 +4,6 @@ jobs:
     steps:
       - TASK:
         - script: echo "hello world"
-
-  - name: new-min-sh
-    type: runSh
-    runtime:
-      architecture: x86_64
-      os: Ubuntu_16.04
-      container: false
-    steps:
-      - TASK:
-          name: echo-facts
-          script: 
-            - echo "cats are cute"
-
-  - name: local-ci_runCI
-    type: runCI
-    steps:
-      - IN: ci-params
-      - IN: ci-gitRepo
       
   - name: new-min-sh-windows
     type: runSh
