@@ -30,9 +30,18 @@ jobs:
       - f1
       - f2
       
+  - name: temp
+    type: runSh
+    steps:
+      - TASK:
+          name: echo-facts
+          script: 
+            - echo "cats are cute"
+      
   - name: f2-f3
     type: runSh
     steps:
+      - IN: temp
       - TASK:
           name: echo-facts
           script: 
