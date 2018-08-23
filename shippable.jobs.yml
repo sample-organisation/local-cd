@@ -26,6 +26,9 @@ jobs:
           name: echo-facts
           script: 
             - echo "cats are cute"
+            - echo "JOB_TRIGGERED_BY_NAME = $JOB_TRIGGERED_BY_NAME"
+            - echo "JOB_TRIGGERED_BY_ID = $JOB_TRIGGERED_BY_ID"
+            - echo "JOB_TRIGGERED_BY_USER = $JOB_TRIGGERED_BY_USER"
     flags:
       - f1
       - f2
@@ -37,6 +40,9 @@ jobs:
           name: echo-facts
           script: 
             - echo "cats are cute"
+            - echo "JOB_TRIGGERED_BY_NAME = $JOB_TRIGGERED_BY_NAME"
+            - echo "JOB_TRIGGERED_BY_ID = $JOB_TRIGGERED_BY_ID"
+            - echo "JOB_TRIGGERED_BY_USER = $JOB_TRIGGERED_BY_USER"
       
   - name: f2-f3
     type: runSh
@@ -46,6 +52,9 @@ jobs:
           name: echo-facts
           script: 
             - echo "cats are cute"
+            - echo "JOB_TRIGGERED_BY_NAME = $JOB_TRIGGERED_BY_NAME"
+            - echo "JOB_TRIGGERED_BY_ID = $JOB_TRIGGERED_BY_ID"
+            - echo "JOB_TRIGGERED_BY_USER = $JOB_TRIGGERED_BY_USER"
     flags:
       - f2
       - f3
@@ -57,6 +66,9 @@ jobs:
           name: echo-facts
           script: 
             - echo "cats are cute"
+            - echo "JOB_TRIGGERED_BY_NAME = $JOB_TRIGGERED_BY_NAME"
+            - echo "JOB_TRIGGERED_BY_ID = $JOB_TRIGGERED_BY_ID"
+            - echo "JOB_TRIGGERED_BY_USER = $JOB_TRIGGERED_BY_USER"
     flags:
       - f1
       - f3
