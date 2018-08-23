@@ -18,6 +18,10 @@ jobs:
 
 
 ########## flags from slackbot
+  - name: local-ci_runCI
+    type: runCI
+    steps:
+      - IN: local-ci_ciRepo
 
   - name: f1-f2
     type: runSh
