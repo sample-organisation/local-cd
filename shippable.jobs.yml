@@ -22,6 +22,8 @@ jobs:
     type: runCI
     steps:
       - IN: local-ci_ciRepo
+    flags:
+      - f1
 
   - name: f1-f2
     type: runSh
