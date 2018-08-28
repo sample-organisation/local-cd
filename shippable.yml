@@ -4,6 +4,6 @@ resources:
     integration: github
     versionTemplate:
       sourceName: sample-organisation/gitRepo
-      branch: gitrepo
+      branch: master
       buildOnPullRequest: true
       buildOnCommit: true
