@@ -17,7 +17,7 @@ resources:
       buildOnPullRequest: true
       buildOnCommit: true
 
-  - name: testing-gitrepo-vs
+  - name: testing-gitrepo-pr-conflict
     type: gitRepo
     integration: github
     versionTemplate:
