@@ -1,0 +1,9 @@
+resources:
+  - name: testing-gitrepo
+    type: gitRepo
+    integration: github
+    versionTemplate:
+      sourceName: sample-organisation/gitRepo
+      branch: gitrepo
+      buildOnPullRequest: true
+      buildOnCommit: true
