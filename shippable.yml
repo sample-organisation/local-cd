@@ -25,3 +25,49 @@ resources:
       branch: pr-conflict
       buildOnPullRequest: true
       buildOnCommit: true
+
+  - name: testing-gitrepo-pr-conflict
+    type: gitRepo
+    integration: github
+    versionTemplate:
+      sourceName: sample-organisation/gitRepo
+      branch: pr-conflict
+      buildOnPullRequest: true
+      buildOnCommit: true
+
+
+  - name: testing-gitrepo-c1
+    type: gitRepo
+    integration: github
+    versionTemplate:
+      sourceName: sample-organisation/gitRepo
+      branch: c1
+      buildOnPullRequest: true
+      buildOnCommit: true
+      
+  - name: testing-gitrepo-c2
+    type: gitRepo
+    integration: github
+    versionTemplate:
+      sourceName: sample-organisation/gitRepo
+      branch: c2
+      buildOnPullRequest: true
+      buildOnCommit: true
+      
+  - name: testing-gitrepo-c3
+    type: gitRepo
+    integration: github
+    versionTemplate:
+      sourceName: sample-organisation/gitRepo
+      branch: c3
+      buildOnPullRequest: true
+      buildOnCommit: true
+      
+  - name: testing-gitrepo-c4
+    type: gitRepo
+    integration: github
+    versionTemplate:
+      sourceName: sample-organisation/gitRepo
+      branch: c4
+      buildOnPullRequest: true
+      buildOnCommit: true
