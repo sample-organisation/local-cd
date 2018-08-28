@@ -16,3 +16,12 @@ resources:
       branch: vs
       buildOnPullRequest: true
       buildOnCommit: true
+
+  - name: testing-gitrepo-vs
+    type: gitRepo
+    integration: github
+    versionTemplate:
+      sourceName: sample-organisation/gitRepo
+      branch: pr-conflict
+      buildOnPullRequest: true
+      buildOnCommit: true
